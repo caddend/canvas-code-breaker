@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кодовый взломщик</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #1a1e24;
+      color: #e0e6ed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      user-select: none;
+    }
+    header {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #61afef;
+    }
+    p {
+      font-size: 13px;
+      color: #abb2bf;
+      margin-top: 4px;
+    }
+    canvas {
+      background: #21252b;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>КОДОВЫЙ ВЗЛОМЩИК</h1>
+    <p>Угадайте секретную цветовую комбинацию за 8 попыток</p>
+  </header>
+  <canvas id="gameCanvas" width="460" height="660"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
